@@ -26,3 +26,9 @@ https://jondoran.github.io/progresslog/
 ## Disclaimer
 
 This is my first app, there are likely to be bugs and breaking changes due to my inexperience. Apologies in advance!
+
+## Possible future features
+
+- [ ] Edit log entries (text and datestamps)
+- [ ] Indicate # of entries for each goal
+- [ ] Reorder goals
