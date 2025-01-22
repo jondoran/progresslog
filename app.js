@@ -458,7 +458,7 @@ const App = {
                         href: "https://github.com/jondoran/progresslog",
                         target: "_blank",
                         rel: "noopener noreferrer"
-                    }, "Source")
+                    }, "About")
                 ])
             ]),
             m("h1", "Progress Log"),
