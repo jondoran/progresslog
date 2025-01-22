@@ -4,7 +4,13 @@ A lightweight single-page application for tracking personal goals and logging da
 
 Create a list of long-term goals (with optional descriptions) and then log every step you take to progress toward them.
 
-Try it out: https://jondoran.github.io/progresslog/
+## Screenshot
+
+![Screenshot of Progress Log web app](screenshot.png)
+
+## Try it out!
+
+https://jondoran.github.io/progresslog/
 
 ## Features
 
@@ -22,3 +28,7 @@ Try it out: https://jondoran.github.io/progresslog/
 - Mithril.js (via CDN)
 - Browser local storage
 - Pure CSS
+
+## Disclaimer
+
+This is my first app, there are likely to be bugs and breaking changes due to my inexperience. Apologies in advance!
