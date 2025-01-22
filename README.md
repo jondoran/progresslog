@@ -4,6 +4,8 @@ A lightweight single-page application for tracking personal goals and logging da
 
 Create a list of long-term goals (with optional descriptions) and then log every step you take to progress toward them.
 
+Try it out: https://jondoran.github.io/progresslog/
+
 ## Features
 
 - Goals can be edited or deleted
