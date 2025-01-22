@@ -455,7 +455,7 @@ const App = {
                     ]),
                     m("span.separator", " | "),
                     m("a.subtle-link", {
-                        href: "https://github.com/yourusername/your-repo-name",
+                        href: "https://github.com/jondoran/progresslog",
                         target: "_blank",
                         rel: "noopener noreferrer"
                     }, "Source")
