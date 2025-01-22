@@ -469,9 +469,49 @@ const App = {
             ),
             m("button.add-goal", {
                 onclick: () => {
-                    // ... rest of your add goal code
+                    const newGoal = {
+                        title: '',
+                        description: ''
+                    };
+            
+                    Modal.open("Add New Goal", 
+                        m(".edit-form", [
+                            m(".form-group", [
+                                m("label", "Title"),
+                                m("input[type=text]", {
+                                    value: newGoal.title,
+                                    oninput: (e) => newGoal.title = e.target.value,
+                                    autofocus: true
+                                })
+                            ]),
+                            m(".form-group", [
+                                m("label", "Description"),
+                                m("textarea", {
+                                    value: newGoal.description,
+                                    oninput: (e) => newGoal.description = e.target.value
+                                })
+                            ])
+                        ]),
+                        [
+                            {
+                                text: "Add",
+                                class: "button-primary",
+                                onclick: () => {
+                                    if (newGoal.title.trim()) {
+                                        Store.addGoal(newGoal.title, newGoal.description);
+                                        Modal.close();
+                                        m.redraw();
+                                    }
+                                }
+                            },
+                            {
+                                text: "Cancel",
+                                onclick: () => Modal.close()
+                            }
+                        ]
+                    );
                 }
-            }, "Add New Goal"),
+            }, "Add New Goal"),            
             m(Modal)
         ])
     }
